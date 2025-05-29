@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    >header {
+        >div {
+            padding: 20px;
+
+            >figure {
+                >img {
+                    width: 260px;
+                }
+            }
+
+            >.navbar {
+                >div {
+                    >div {
+                        >ul {
+                            display: flex;
+                            gap: 30px;
+
+                            >li {
+                                >a {
+                                    transition: .5s;
+
+                                    &:hover {
+                                        color: #fd9d2a;
+
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.btn {
+                width: 200px;
+                height: 60px;
+                background-color: #fd9d2a;
+                border: none;
+
+                &:hover {
+                    background-color: blue;
+                }
+
+            }
+        }
+    }
+
+    >.one {
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            >div {
+                &:first-of-type {
+
+                    >img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &:last-of-type {
+
+                    >h2 {
+                        font-size: 80px;
+                    }
+
+                    >button {
+                        background-color: #8bca02;
+                        border: none;
+                        transition: .5s;
+
+                        &:hover {
+                            background-color: blue;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    >.three {
+        width: 100%;
+        /* height: 200vh; */
+        margin-top: 80px;
+        background-image: url(img/destinations-bg-3.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        >.row {
+            width: 100%;
+            height: 100%;
+
+            >.btn {
+                margin-left: 40%;
+                margin-top: 40px;
+            }
+
+            >h2 {
+                width: 1700px;
+                display: block;
+                margin-top: 40px;
+                font-size: 55px;
+                text-align: center;
+                color: white;
+            }
+
+            >span {
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                >div {
+                    width: 160px;
+                    height: 280px;
+                    border-radius: 10%;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    >img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        object-position: right;
+                        transition: .5s;
+
+                        &:hover {
+                            object-position: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >footer{
+        background-color: rgb(43, 42, 42);
+        background-image: url(img/footer-tagline-bg-3.png);
+        width: 100%;
+        /* height: 360vh; */
+        background-repeat: no-repeat;
+
+        >.row{
+            >nav{
+                >ul{
+                    >p{
+                        color: white;
+                        font-size: 35px;
+                    }
+                    >li{
+                        list-style: none;
+                        font-size: 35px;
+                        >a{
+                            color: white;
+                            text-decoration: none;
+                            transition: .5s;
+                            &:hover{
+                                color: #8bca02;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+     
+    }
+}
